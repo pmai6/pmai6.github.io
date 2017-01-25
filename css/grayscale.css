@@ -26,6 +26,7 @@ h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
     font-family: "Open Sans", sans-serif;
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px orange;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -89,7 +90,8 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #8B4513;
+    color: #fff;
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px orange;
 }
 
 .navbar-custom .nav li a {
@@ -146,8 +148,8 @@ a:focus {
     height: auto;
     padding: 100px 0;
     text-align: left;
-    color: #8B4513;
-    background: url(../img/bg.jpg) no-repeat center scroll;
+    color: #F4F6F7;
+    background: url(../img/me.jpg) no-repeat center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -157,7 +159,7 @@ a:focus {
 
 .intro .intro-body {
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 .intro .intro-body .brand-heading {
@@ -178,7 +180,7 @@ a:focus {
     }
 
     .intro .intro-body .brand-heading {
-        font-size: 90px;
+        font-size: 60px;
     }
 
     .intro .intro-body .intro-text {
@@ -187,9 +189,13 @@ a:focus {
 }
 
 .img-responsive {
-    width: 520px;
+    /*width: 520px;
     height: 650px;
-    float: right;
+    float: right;*/
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    float: center;
     margin-right: -150px;
     position: relative; 
     top: -100px; 
@@ -200,10 +206,10 @@ a:focus {
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid #8B4513;
+    border: 2px solid #F4F6F7;
     border-radius: 100%!important;
     font-size: 40px;
-    color: #8B4513;
+    color: #F4F6F7;
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -271,20 +277,34 @@ a:focus {
 
 .content-section {
     padding-top: 100px;
-    background: url(../img/bg.jpg) no-repeat center scroll;
+    /*background: url(../img/bg.jpg) no-repeat center scroll;*/
+
 }
 
 .download-section {
     width: 100%;
     padding: 50px 0;
-    color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    color: #34495E;
+    /*background: url(../img/downloads-bg.jpg) no-repeat center center scroll;*/
+    background-color: #F2F3F4;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.resume-section {
+    width: 100%;
+    padding: 50px 0;
+    color: #F4F6F7;
+    /*background: url(../img/bg.jpg) no-repeat center scroll;*/
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
+
 
 #map {
     width: 100%;
@@ -294,7 +314,7 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 150px;
     }
 
     .download-section {
